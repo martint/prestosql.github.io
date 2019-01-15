@@ -285,7 +285,7 @@ presto-admin connector add connector-name
                 <dt>Example</dt>
                 <dd>
 <pre>
-String sql = "SELECT * FROM sys.node";
+String sql = "SELECT * FROM example";
 String url = "jdbc:presto://localhost:8080/catalog/schema";
 try (Connection connection =
         DriverManager.getConnection(url, "test", null)) {
