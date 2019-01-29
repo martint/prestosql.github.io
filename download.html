@@ -29,7 +29,7 @@
             <li><a href="community.html">Community</a></li>
             <li><a href="resources.html">Resources</a></li>
             <li><a href="development">Development</a></li>
-            <li><a href="download.html">Download</a></li>
+            <li><a href="download.html" class="active">Download</a></li>
         </ul>
     </nav>
 </header>
@@ -41,48 +41,60 @@
 </header>
 
 <div class="content homecontent width clearfix">
-    <div class="">
-        <h2>Current release</h2>
-
-        <p>
-            The current Presto release is version <b>300</b>.
-            See <a href="docs/current/release/release-300.html">release notes</a>.
-        </p>
-
+    <div>
+      <h2>Current release</h2>
+      <p>
+          The current Presto release is version <b>300</b>.
+          See <a href="docs/current/release/release-300.html">release notes</a>.
+      </p>
+    </div>
+    <div class="feature-grid">
+      <div>
         <h2>Server</h2>
-
         <p>
             See <a href="docs/current/installation/deployment.html">Deploying Presto</a>
             for complete deployment instructions.
         </p>
-
         <p>
-            Download: <a href="https://repo1.maven.org/maven2/io/prestosql/presto-server/300/presto-server-300.tar.gz">presto-server-300.tar.gz</a>
+            Download tar.gz:
+            <a class="button" href="https://repo1.maven.org/maven2/io/prestosql/presto-server/300/presto-server-300.tar.gz"><img src="static/icon-download.png" />presto-server-300.tar.gz</a>
         </p>
-
+      </div>
+      <div>
         <h2>Command Line Interface</h2>
-
         <p>
             You can run queries using the interactive
             <a href="docs/current/installation/cli.html">Command Line Interface</a>.
         </p>
-
         <p>
-            Download: <a href="https://repo1.maven.org/maven2/io/prestosql/presto-cli/300/presto-cli-300-executable.jar">presto-cli-300-executable.jar</a>
+            Download CLI jar:
+            <a class="button" href="https://repo1.maven.org/maven2/io/prestosql/presto-cli/300/presto-cli-300-executable.jar"><img src="static/icon-download.png" />presto-cli-300-executable.jar</a>
         </p>
-
+      </div>
+      <div>
         <h2>JDBC Driver</h2>
-
         <p>
             Connect to Presto from Java using the
             <a href="docs/current/installation/jdbc.html">JDBC Driver</a>.
         </p>
-
         <p>
-            Download: <a href="https://repo1.maven.org/maven2/io/prestosql/presto-jdbc/300/presto-jdbc-300.jar">presto-jdbc-300.jar</a>
+            Download JDBC jar:
+            <a class="button" href="https://repo1.maven.org/maven2/io/prestosql/presto-jdbc/300/presto-jdbc-300.jar"><img src="static/icon-download.png" />presto-jdbc-300.jar</a>
         </p>
+      </div>
     </div>
 </div>
+<div style="margin-bottom:50px;"></div>
 
+<footer class="footer" align="center">
+  <div class="width text-center">
+    <p class="text-center"><a href="docs/current/">Documentation</a>&ensp;·&ensp;
+    <a href="community.html">Community</a>&ensp;·&ensp;
+    <a href="resources.html">Resources</a>&ensp;·&ensp;
+    <a href="development">Development</a>&ensp;·&ensp;
+    <a href="download.html">Download</a></p>
+    <p class="text-center copyright">Let's put some sort of legal blurb in here or details on how to contribute to the project.</p>
+  </div>
+</footer>
 </body>
 </html>
