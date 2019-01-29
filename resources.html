@@ -43,139 +43,6 @@
 <div class="content homecontent width clearfix">
     <div class="leftcol widecol faq">
 
-        <h2 id="tools">Presto Management Tools</h2>
-
-        <div class="item">
-            <h4>Presto-Admin</h4>
-            <dl>
-                <dt>Project</dt>
-                <dd><a href="https://github.com/prestodb/presto-admin">Presto-Admin</a></dd>
-                <dt>Maintained by</dt>
-                <dd><a href="https://www.starburstdata.com/">Starburst, The Presto company</a></dd>
-                <dt>Description</dt>
-                <dd>
-                    Presto-Admin is a tool for installing and managing the Presto
-                    query engine on a cluster. It provides easy-to-use commands:
-                    <p/>
-                    <ul>
-                        <li>Install and uninstall Presto across your cluster</li>
-                        <li>Configure your Presto cluster</li>
-                        <li>Start and stop the Presto servers</li>
-                        <li>Gather status and log information from your Presto cluster</li>
-                    </ul>
-                    If you need any assistance with your Presto cluster management
-                    reach out to <a href="https://www.starburstdata.com">Starburst</a>
-                    for their <a href="https://www.starburstdata.com/presto-enterprise/">Presto enterprise support</a>
-                    offering and other Presto related services.
-                </dd>
-                <dt>Examples</dt>
-<pre>
-presto-admin server start|stop|restart|status
-presto-admin server install path-to-presto-rpm
-presto-admin connector add connector-name
-</pre>
-            </dl>
-        </div>
-
-        <h2 id="clients">Presto Clients and GUIs</h2>
-
-        <div class="item">
-            <h4>Airpal</h4>
-            <dl>
-                <dt>Project</dt>
-                <dd><a href="https://airbnb.github.io/airpal/">Airpal</a></dd>
-                <dt>Maintained by</dt>
-                <dd><a href="https://github.com/airbnb">Airbnb</a></dd>
-                <dt>Description</dt>
-                <dd>
-                    Airpal is a web-based, query execution tool which
-                    leverages Presto to make authoring queries
-                    and retrieving results simple for users. Airpal provides
-                    the ability to find tables, see metadata, browse sample
-                    rows, write and edit queries, then submit queries all
-                    in a web interface.
-                </dd>
-            </dl>
-        </div>
-
-        <div class="item">
-            <h4>Redash</h4>
-            <dl>
-                <dt>Project</dt>
-                <dd><a href="https://redash.io/">Redash</a></dd>
-                <dt>Maintained by</dt>
-                <dd><a href="https://github.com/getredash/">Arik Fraimovich</a></dd>
-                <dt>Description</dt>
-                <dd>
-                    Redash is a take on freeing the data within our
-                    company in a way that will better fit our culture and
-                    usage patterns. It has Presto support as well as other
-                    backends, and offers a query editor with syntax
-                    highlighting and completion, and creating
-                    visualizations and dashboards from query results.
-                </dd>
-            </dl>
-        </div>
-
-        <div class="item">
-            <h4>Shib</h4>
-            <dl>
-                <dt>Project</dt>
-                <dd><a href="https://github.com/tagomoris/shib">GitHub</a></dd>
-                <dt>Maintained by</dt>
-                <dd><a href="https://github.com/tagomoris">Tagomori Satoshi</a></dd>
-                <dt>Description</dt>
-                <dd>
-                    Shib is a web-client written in Node.js designed to
-                    query Presto and Hive. To run Shib install node.js,
-                    alter your config.js, and follow the instructions on
-                    the shib project page. Shib can also be used as an
-                    proxy server for query engines.
-                </dd>
-            </dl>
-        </div>
-
-        <div class="item">
-            <h4>Superset</h4>
-            <dl>
-                <dt>Project</dt>
-                <dd><a href="https://superset.incubator.apache.org/">Apache Superset</a></dd>
-                <dt>Maintained by</dt>
-                <dd><a href="https://github.com/apache/incubator-superset">Apache Superset</a></dd>
-                <dt>Description</dt>
-                <dd>
-                    Superset enables users to consume data in many different
-                    ways: writing SQL queries, creating new tables, creating
-                    a visualization (slice), adding that visualization to one
-                    or many dashboards and downloading a CSV. SQL Lab is a
-                    a part of Superset and provides rich SQL editor that
-                    enables users to both query and visualize data.
-                    You can explore and preview tables in Presto, effortlessly
-                    compose SQL queries to access data. From there, you can
-                    either export a CSV file or immediately visualize your
-                    data in the Superset "Explore" view.
-                </dd>
-            </dl>
-        </div>
-
-        <div class="item">
-            <h4>yanagishima</h4>
-            <dl>
-                <dt>Project</dt>
-                <dd><a href="https://github.com/wyukawa/yanagishima">GitHub</a></dd>
-                <dt>Maintained by</dt>
-                <dd><a href="https://github.com/wyukawa">wyukawa</a>, <a href="https://github.com/okazou">okazou</a></dd>
-                <dt>Description</dt>
-                <dd>
-                    yanagishima is a web application for Presto.
-                    yanagishima provides the ability to execute query,
-                    show query, kill query, bookmark query, search table,
-                    share query/query result, format query, download as CSV/TSV file,
-                    insert chart, substitute query parameter, and so on.
-                </dd>
-            </dl>
-        </div>
-
         <h2 id="odbc">Presto ODBC</h2>
 
         <p>
@@ -236,7 +103,6 @@ presto-admin connector add connector-name
             <a href="#language-go">Go</a>,
             <a href="#language-java">Java</a>,
             <a href="#language-node">Node.js</a>,
-            <a href="#language-php">PHP</a>,
             <a href="#language-python">Python</a>,
             <a href="#language-r">R</a>,
             <a href="#language-ruby">Ruby</a>.
@@ -381,40 +247,136 @@ try (Connection connection =
             </dl>
         </div>
 
-        <h2 id="hosting">Presto Hosting</h2>
+        <h2 id="guis">Presto GUIs</h2>
 
         <div class="item">
-            <h4>Qubole</h4>
+            <h4>Airpal</h4>
             <dl>
-                <dt>Product</dt>
-                <dd><a href="https://www.qubole.com/presto-as-a-service/">Presto as a Service</a></dd>
+                <dt>Project</dt>
+                <dd><a href="https://airbnb.github.io/airpal/">Airpal</a></dd>
+                <dt>Maintained by</dt>
+                <dd><a href="https://github.com/airbnb">Airbnb</a></dd>
                 <dt>Description</dt>
                 <dd>
-                    Presto is integrated with the Qubole Data Service (QDS)
-                    platform. QDS is a web-based interface for launching
-                    Presto clusters and running queries across Presto clusters
-                    on Amazon's EC2.
+                    Airpal is a web-based, query execution tool which
+                    leverages Presto to make authoring queries
+                    and retrieving results simple for users. Airpal provides
+                    the ability to find tables, see metadata, browse sample
+                    rows, write and edit queries, then submit queries all
+                    in a web interface.
                 </dd>
             </dl>
         </div>
 
-        <h2 id="connectors">Presto Connectors / Plugins</h2>
-
         <div class="item">
-            <h4>MySQL-Teradata</h4>
+            <h4>Redash</h4>
             <dl>
                 <dt>Project</dt>
-                <dd><a href="https://github.com/HackShare/presto">MySQL-Teradata Plugin for Presto</a></dd>
+                <dd><a href="https://redash.io/">Redash</a></dd>
                 <dt>Maintained by</dt>
-                <dd><a href="https://github.com/HackShare">HackShare</a></dd>
+                <dd><a href="https://github.com/getredash/">Arik Fraimovich</a></dd>
                 <dt>Description</dt>
                 <dd>
-                    This project isn't an install-ready plugin for
-                    MySQL-Teradata it is a fork of the entire Presto
-                    project and it contains a working MySQL-Teradata
-                    plugin. This integration was posted to the Google
-                    Group by maintainer Dheeban Govindarajan.
+                    Redash is a take on freeing the data within our
+                    company in a way that will better fit our culture and
+                    usage patterns. It has Presto support as well as other
+                    backends, and offers a query editor with syntax
+                    highlighting and completion, and creating
+                    visualizations and dashboards from query results.
                 </dd>
+            </dl>
+        </div>
+
+        <div class="item">
+            <h4>Shib</h4>
+            <dl>
+                <dt>Project</dt>
+                <dd><a href="https://github.com/tagomoris/shib">GitHub</a></dd>
+                <dt>Maintained by</dt>
+                <dd><a href="https://github.com/tagomoris">Tagomori Satoshi</a></dd>
+                <dt>Description</dt>
+                <dd>
+                    Shib is a web-client written in Node.js designed to
+                    query Presto and Hive. To run Shib install node.js,
+                    alter your config.js, and follow the instructions on
+                    the shib project page. Shib can also be used as an
+                    proxy server for query engines.
+                </dd>
+            </dl>
+        </div>
+
+        <div class="item">
+            <h4>Superset</h4>
+            <dl>
+                <dt>Project</dt>
+                <dd><a href="https://superset.incubator.apache.org/">Apache Superset</a></dd>
+                <dt>Maintained by</dt>
+                <dd><a href="https://github.com/apache/incubator-superset">Apache Superset</a></dd>
+                <dt>Description</dt>
+                <dd>
+                    Superset enables users to consume data in many different
+                    ways: writing SQL queries, creating new tables, creating
+                    a visualization (slice), adding that visualization to one
+                    or many dashboards and downloading a CSV. SQL Lab is a
+                    a part of Superset and provides rich SQL editor that
+                    enables users to both query and visualize data.
+                    You can explore and preview tables in Presto, effortlessly
+                    compose SQL queries to access data. From there, you can
+                    either export a CSV file or immediately visualize your
+                    data in the Superset "Explore" view.
+                </dd>
+            </dl>
+        </div>
+
+        <div class="item">
+            <h4>yanagishima</h4>
+            <dl>
+                <dt>Project</dt>
+                <dd><a href="https://github.com/wyukawa/yanagishima">GitHub</a></dd>
+                <dt>Maintained by</dt>
+                <dd><a href="https://github.com/wyukawa">wyukawa</a>, <a href="https://github.com/okazou">okazou</a></dd>
+                <dt>Description</dt>
+                <dd>
+                    yanagishima is a web application for Presto.
+                    yanagishima provides the ability to execute query,
+                    show query, kill query, bookmark query, search table,
+                    share query/query result, format query, download as CSV/TSV file,
+                    insert chart, substitute query parameter, and so on.
+                </dd>
+            </dl>
+        </div>
+
+        <h2 id="tools">Presto Management Tools</h2>
+
+        <div class="item">
+            <h4>Presto-Admin</h4>
+            <dl>
+                <dt>Project</dt>
+                <dd><a href="https://github.com/prestodb/presto-admin">Presto-Admin</a></dd>
+                <dt>Maintained by</dt>
+                <dd><a href="https://www.starburstdata.com/">Starburst, The Presto company</a></dd>
+                <dt>Description</dt>
+                <dd>
+                    Presto-Admin is a tool for installing and managing the Presto
+                    query engine on a cluster. It provides easy-to-use commands:
+                    <p/>
+                    <ul>
+                        <li>Install and uninstall Presto across your cluster</li>
+                        <li>Configure your Presto cluster</li>
+                        <li>Start and stop the Presto servers</li>
+                        <li>Gather status and log information from your Presto cluster</li>
+                    </ul>
+                    If you need any assistance with your Presto cluster management
+                    reach out to <a href="https://www.starburstdata.com">Starburst</a>
+                    for their <a href="https://www.starburstdata.com/presto-enterprise/">Presto enterprise support</a>
+                    offering and other Presto related services.
+                </dd>
+                <dt>Examples</dt>
+<pre>
+presto-admin server start|stop|restart|status
+presto-admin server install path-to-presto-rpm
+presto-admin connector add connector-name
+</pre>
             </dl>
         </div>
 
@@ -453,6 +415,46 @@ try (Connection connection =
             </dl>
         </div>
 
+        <h2 id="hosted">Hosted Presto</h2>
+
+        <div class="item">
+            <h4>Qubole</h4>
+            <dl>
+                <dt>Product</dt>
+                <dd><a href="https://www.qubole.com/presto-as-a-service/">Presto as a Service</a></dd>
+                <dt>Description</dt>
+                <dd>
+                    Presto is integrated with the Qubole Data Service (QDS)
+                    platform. QDS is a web-based interface for launching
+                    Presto clusters and running queries across Presto clusters
+                    on Amazon's EC2.
+                </dd>
+            </dl>
+        </div>
+
+        <div class="item">
+            <h4>Amazon Athena</h4>
+            <dl>
+                <dt>Website</dt>
+                <dd><a href="https://aws.amazon.com/athena/">Amazon Athena</a></dd>
+                <dt>Maintainer</dt>
+                <dd><a href="https://aws.amazon.com/">Amazon Web Services</a></dd>
+                <dd>
+                    <p>
+                        Amazon Athena is an interactive query service based on Presto that makes it easy to analyze data in Amazon S3
+                        using standard SQL. Athena is serverless, so there is no infrastructure to manage, and you pay only for the
+                        queries that you run.
+                    <p/>
+                    <p>
+                        Amazon Athena uses Presto with full standard SQL support and works with a variety of standard data formats.
+                        Athena is out-of-the-box integrated with AWS Glue Data Catalog, allowing you to create a unified metadata
+                        repository across various services, crawl data sources to discover schemas and populate your Catalog with
+                        new and modified table and partition definitions, and maintain schema versioning.
+                    </p>
+                </dd>
+            </dl>
+        </div>
+
         <h2 id="cloud">Presto Cloud</h2>
 
         <p>
@@ -479,29 +481,6 @@ try (Connection connection =
                         Starburst Presto on AWS enables you to run analytic SQL queries across
                         a wide variety of data sources with elastic scaling and usage-based pricing.
                         Read more how to use Presto on AWS on our <a href="https://docs.starburstdata.com/latest/aws.html">AWS Documentation site</a>.
-                    </p>
-                </dd>
-            </dl>
-        </div>
-
-        <div class="item">
-            <h4>Amazon Athena</h4>
-            <dl>
-                <dt>Website</dt>
-                <dd><a href="https://aws.amazon.com/athena/">Amazon Athena</a></dd>
-                <dt>Maintainer</dt>
-                <dd><a href="https://aws.amazon.com/">Amazon Web Services</a></dd>
-                <dd>
-                    <p>
-                        Amazon Athena is an interactive query service based on Presto that makes it easy to analyze data in Amazon S3
-                        using standard SQL. Athena is serverless, so there is no infrastructure to manage, and you pay only for the
-                        queries that you run.
-                    <p/>
-                    <p>
-                        Amazon Athena uses Presto with full standard SQL support and works with a variety of standard data formats.
-                        Athena is out-of-the-box integrated with AWS Glue Data Catalog, allowing you to create a unified metadata
-                        repository across various services, crawl data sources to discover schemas and populate your Catalog with
-                        new and modified table and partition definitions, and maintain schema versioning.
                     </p>
                 </dd>
             </dl>
@@ -572,19 +551,16 @@ try (Connection connection =
     <div class="rightcol">
     <h3>Presto Resources</h3>
     <ul>
-        <li><a href="#tools">Presto Management Tools</a></li>
-        <li><a href="#clients">Presto Clients</a></li>
         <li><a href="#odbc">Presto ODBC</a></li>
         <li><a href="#libraries">Presto Libraries</a></li>
-        <li><a href="#hosting">Presto Hosting</a></li>
-        <li><a href="#connectors">Presto Connectors</a></li>
+        <li><a href="#guis">Presto GUIs</a></li>
+        <li><a href="#tools">Presto Management Tools</a></li>
         <li><a href="#support">Enterprise Support for Presto</a></li>
-        <li><a href="#cloud">Presto Cloud (AWS/Azure)</a></li>
+        <li><a href="#hosted">Hosted Presto</a></li>
+        <li><a href="#cloud">Presto Cloud</a></li>
     </ul>
 </div>
 </div>
-
-<div class="footer">&copy; Copyright 2013-2016, Facebook</div>
 
 </body>
 </html>
