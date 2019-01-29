@@ -77,15 +77,19 @@ div.content ul > li {
     margin: 0;
 }
 
+.homehero .buttons {
+    text-align: center;
+}
+
 .homehero .button {
     background: #102747;
     color: #fff;
     display: inline-block;
     text-transform: uppercase;
     padding: 10px 20px;
-    margin-top: 15px;
-    margin-bottom: 20px;
+    margin: 15px 10px 20px 10px;
     border-radius: 5px;
+    min-width: 150px;
 }
 
 .nav .right {
@@ -120,7 +124,7 @@ h1 {
 
 h2 {
     font-size: 1.4em;
-    color: #a8a8a8;
+    color: #888888;
     text-transform: uppercase;
     font-weight: bold;
     border: none;
@@ -196,6 +200,7 @@ code {
     font-size: 20px;
     font-weight: normal;
     padding-top: 10px;
+    text-align: center;
 }
 
 .homehero .showterm {
@@ -287,7 +292,7 @@ ol > li > ol > li > ol {
     }
 
     .homehero h1 {
-        font-size: 34px;
+        font-size: 26px;
     }
 }
 
